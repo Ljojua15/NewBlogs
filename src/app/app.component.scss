@@ -1,17 +1,38 @@
-.main{
-  width: 1024px;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid black;
-  overflow-x: scroll;
-&__first{
-  width: 200px;
-  height: 30px;
-  border: 2px solid black;
-  cursor: pointer;
-  border-radius: 20px;
+.main {
+    position: relative;
+    margin: auto;
+    width: 1024px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    overflow-x: hidden;
+    &__first {
+        width: 200px;
+        height: 30px;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 20px;
+        margin: 15px;
+    }
 }
+
+.left,
+.right {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.left {
+    top: 0;
+    left: 20px;
+}
+
+.right {
+    top: 0;
+    right: 10px;
 }

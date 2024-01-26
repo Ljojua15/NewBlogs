@@ -15,7 +15,7 @@ export class AppComponent {
   constructor(private category: CategoryService) {
     this.category.getData().subscribe((res: any) => {
       this.category.data$.next(res.data);
-      console.log(res.data);
+      console.log(res.data[2].id);
     });
   }
 }

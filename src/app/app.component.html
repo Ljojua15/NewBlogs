@@ -1,6 +1,9 @@
 <div *ngIf="data | async as datas">
-  <div class="main">
-    <button class="main__first" *ngFor="let item of datas"  [ngStyle]="{'background-color': item.background_color}">{{item.id}}{{item.title}}
+
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+        <button class="main__first" *ngFor="let item of datas" [ngStyle]="{'background-color': item.background_color}">{{item.id}}{{item.title}}
     </button>
-  </div>
+    </div>
 </div>
